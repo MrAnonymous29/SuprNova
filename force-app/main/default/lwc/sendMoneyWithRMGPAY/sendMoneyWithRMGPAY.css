@@ -1,0 +1,151 @@
+/* SM Created css for sendMoneyWithRMGPAY  */
+
+    /* Main container */
+.container {
+    width: 100%;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f4;
+}
+
+.container h1 {
+    font-size: 24px;
+    color: #172068;
+    font-weight: bold;
+}
+
+.container p {
+    font-weight: bold;
+    font-size: 16px;
+    color: #5e5454;
+}
+/* options css */
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+/* option css for ever option */
+.options .option {
+    background-color: #ffffff; 
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 0px ; /* Adjusted shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+    height: 200px;
+}
+/* option text */
+.option-text{
+    font-size: 15px;
+    color: #6878be;
+}
+
+/* logo for css */
+.logo {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    padding: 5px;
+    fill: #192b67;
+}
+
+/* Added this media query at the end of your CSS */
+@media (max-width: 600px) {
+    .options {
+        flex-direction: column;
+    }
+}
+
+/* css for accordion */
+.accordion-button {
+    display: flex;
+    width: 100%;  
+    align-items: flex-start; 
+    justify-content: space-between;  
+    padding: 10px 0;
+    
+    background-color: #ffffff; 
+    border: none; 
+    flex: 1;
+    padding: 10px;
+    color:#6878be;
+    box-shadow: 0px 0px 1px 0px;
+    
+    
+}
+
+.accordion-button .content {
+    display: flex;
+    align-items: center; 
+   
+}
+
+/* css for arrow finctionality */
+.arrow {
+    float: right; /* This positions the icon on the right */
+    font-weight: bold;
+    font-size: 16px; /* This increases the size of the icon */ 
+}
+.arrow.right {
+    transform: rotate(0deg);
+}
+
+.arrow.down {
+    transform: rotate(90deg);
+}
+
+/* css for accordion content */
+.accordion-content {
+    display: none;
+    padding: 10px 10px 10px 40px;
+    background-color: #ffffff; 
+    box-shadow: 0px 0px 1px 0px ;
+    color:#6878be;
+    
+    
+}
+
+.container h1, .container p, .accordion {
+    padding-left: 10px; 
+    padding-right: 10px;
+}
+/* css for background round circle of icons */
+.icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #f5f5f5;
+    margin-right: 10px;
+    
+}
+
+
+/* first and last border redius */
+.four {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.first{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.accordion{
+    margin-top: 10px;
+    color: #6878be;
+}
+ /* svg icon color */
+.icon-circle svg{
+    fill: #6878be;
+}
+

@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Example Component">
+        <div class="slds-var-m-around_medium">
+            <lightning-input label="Parameter 1" value={paramForChangeOne} onchange={handleParamOneChange}></lightning-input>
+            <!-- Display the parameters here -->
+            <template if:true={parameters}>
+                <template for:each={parameters} for:item="param">
+                    <p key={param.id}>{param.id}</p>
+                    <p key={param.id}>{param.Name}</p>
+                </template>
+            </template>
+            <lightning-button label="Change and Refresh" onclick={callFromHtml}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
